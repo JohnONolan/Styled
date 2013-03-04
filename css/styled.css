@@ -1,15 +1,11 @@
+@import url(normalize.css);
+@import url(demopage.css);
 /*
- * These are the global generic form styles used throughout the Ghost admin,
- * but mainly in the settings pages. Don't fuck with them.
- *
- * Table of Contents:
- * 
- * General
- * Hacks
- *
+ * These are some default styles which sit on top of Normalize.css. Copy/paste
+ * and hack them as a starting point for your own styles, if you like.
  */
 /* =============================================================================
-   General
+   Main Styles
    ============================================================================= */
 form fieldset {
   border: none;
