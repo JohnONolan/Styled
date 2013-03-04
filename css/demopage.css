@@ -6,6 +6,10 @@ body {
     background: #e4e9ed;
 }
 
+a {
+    color: #2d88e6;
+}
+
 #sidebar {
     position: fixed;
     top:0;
@@ -15,27 +19,33 @@ body {
 }
 
 #sidebar header {
-    padding:60px 60px 0 60px;
+    padding:40px 60px 0 60px;
 }
 
-#styled {
+#title {
     font-weight: bold;
     font-size:2em;
     letter-spacing: -1px;
+    margin-bottom:0;
 }
 
-#sidebar p {
+#description {
+    padding-bottom:10px;
     font-size: 0.8em;
 }
 
 #sidebar nav ul {
     list-style: none;
-    margin:0;
+    margin:0 0 0 0;
     padding:0;
+    font-size: 0.9em;
+    border-top:rgba(0,0,0,0.05) 1px solid;
+    border-bottom:rgba(255,255,255,0.5) 1px solid;
 }
 
 #sidebar nav li {
-    
+    border-bottom:rgba(0,0,0,0.05) 1px solid;
+    border-top:rgba(255,255,255,0.5) 1px solid;
 }
 
 #sidebar nav li a {
@@ -46,8 +56,17 @@ body {
     font-weight: bold;
 }
 
+#sidebar nav li:hover {
+    border-top:rgba(0,0,0,0.05) 1px solid;
+}
+
 #sidebar nav li a:hover{
     background: rgba(0,0,0,0.05);
+}
+
+#sidebar li.active,
+#sidebar li.active:hover {
+    border-top:rgba(255,255,255,0.5) 1px solid;
 }
 
 #sidebar nav li.active a {
@@ -55,13 +74,74 @@ body {
 }
 
 main {
+    display: block;
     max-width: 1100px;
     margin: 60px 60px 60px 360px;
-    padding: 60px;
     background: #fff;
     position: relative;
     z-index: 200;
     -webkit-box-shadow:rgba(0,0,0,0.1) 0 1px 8px;
     -moz-box-shadow:rgba(0,0,0,0.1) 0 1px 8px;
     box-shadow:rgba(0,0,0,0.1) 0 1px 8px;
+}
+
+main article {
+    padding:40px 60px;
+    border-top:#eee 1px solid;
+}
+
+@media (max-width: 1200px) {
+
+    #sidebar {
+        width:30%;
+    }
+
+    #sidebar header {
+        padding:20px 30px 0 30px;
+    }
+
+    #sidebar nav li a {
+        padding: 10px 30px;
+    }
+
+    main {
+        margin: 20px 20px 20px 200px;
+        margin-left:30%;
+    }
+
+    main article {
+        padding:20px 40px 20px 40px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    #sidebar {
+        position:static;
+        width: 100%;
+    }
+
+    #sidebar header {
+        padding:0 40px 0 40px;
+        margin:0;
+    }
+
+    #description {
+        padding:0;
+    }
+
+    #sidebar nav {
+        display: none;
+    }
+
+    main {
+        margin:20px;
+    }
+
+    main article {
+        padding:10px 20px 20px 20px;
+    }
+
 }
