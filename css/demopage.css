@@ -15,7 +15,7 @@ a {
     top:0;
     left:0;
     width:360px;
-    color:rgba(0,0,0,0.6);
+    color:rgba(0,0,0,0.5);
 }
 
 #sidebar header {
@@ -30,7 +30,7 @@ a {
 }
 
 #title a {
-    color:rgba(0,0,0,0.6);
+    color:rgba(0,0,0,0.5);
     text-decoration: none;
 }
 
@@ -56,8 +56,8 @@ a {
 #sidebar nav li a {
     display: block;
     padding: 10px 60px;
+    color:rgba(0,0,0,0.5);
     text-decoration: none;
-    color:rgba(0,0,0,0.6);
     font-weight: bold;
 }
 
@@ -76,6 +76,7 @@ a {
 
 #sidebar nav li.active a {
     background: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,0.7);
 }
 
 main {
