@@ -1,6 +1,6 @@
 #Styled
 
-Styled is a comprehensive HTML framework which acts as a visual styleguide for your CSS. Download the source, import your HTML, and check how your CSS styles a wide range of default markup. Because it's better to get your default styles sold first, or you end up writing overrides to override your overrides.
+Styled is a comprehensive HTML framework which acts as a visual styleguide for your CSS. Download the source, link your styles, and check how your CSS affects a wide range of default markup. Because it's better to get your default styles solid first, or you end up writing overrides to override your overrides.
 
 Created and maintained by [John O'Nolan](http://twitter.com/JohnONolan).
 
