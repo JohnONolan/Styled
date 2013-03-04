@@ -13,7 +13,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#headings">Headings</a></li>
+            <li><a id="headingslink" href="#headings">Headings</a></li>
             <li><a href="#text">Text</a></li>
             <li><a href="#lists">Lists</a></li>
             <li><a href="#media">Media</a></li>
@@ -411,6 +411,16 @@
     </article>
 
 </main>
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll.js"></script>
+<script>
+$(document).ready(function(){
+    $.localScroll();
+    $('#sidebar nav li').click(function(){
+        $('#sidebar nav li').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+</script>
 </body>
 </html>

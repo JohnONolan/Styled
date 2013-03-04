@@ -46,7 +46,11 @@ body {
     font-weight: bold;
 }
 
-#sidebar nav li a:hover {
+#sidebar nav li a:hover{
+    background: rgba(0,0,0,0.05);
+}
+
+#sidebar nav li.active a {
     background: rgba(255,255,255,0.5);
 }
 
