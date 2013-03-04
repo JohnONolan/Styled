@@ -13,12 +13,12 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Headings</a></li>
-            <li><a href="#">Text</a></li>
-            <li><a href="#">Lists</a></li>
-            <li><a href="#">Media</a></li>
-            <li><a href="#">Forms</a></li>
-            <li><a href="#">Tables</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#tables">Tables</a></li>
         </ul>
     </nav>
 
@@ -26,21 +26,7 @@
 
 <main role="main">
 
-  <header role="banner"> 
-      <hgroup> 
-          <h1>Grouped Heading 1</h1> 
-          <h2>Grouped Heading 2</h2>
-      </hgroup>
-      <nav> 
-          <ul> 
-              <li><a href="#">navigation item #1</a></li> 
-              <li><a href="#">navigation item #2</a></li> 
-              <li><a href="#">navigation item #3</a></li> 
-          </ul> 
-      </nav> 
-  </header>
-
-    <section class="palette">
+    <article id="colors">
         <h3>UI Colours</h3>
 
         <div>
@@ -49,20 +35,12 @@
             <section class="lightbrown">#edece4 <small>Dividers</small></section>
         </div>
 
-        <div class="clearfix"></div>
-
         <div>
             <section class="darkgrey">#242628 <small>BG</small></section>
             <section class="grey">#35393b <small>Dividers</small></section>
             <section class="midgrey">#7d878a <small>Text/Icons</small></section>
             <section class="lightgrey">#e2edf2 <small>Highlight</small></section>
         </div>
-
-        <div class="clearfix"></div>
-            
-    </section>
-    <section class="palette">
-        <h3>Actions</h3>
 
         <div>
             <section class="blue">#4090ba <small>Save</small></section>
@@ -72,11 +50,9 @@
 
         <div class="clearfix"></div>
 
-    </section>
+    </article>
 
-    <div class="clearfix"></div>
-
-    <article role="main">
+    <article id="article">
         <header>
             <hgroup>
                 <h2>An Article Headline</h2>
@@ -109,7 +85,7 @@
 
     </article>
 
-    <section id="headers">
+    <article id="headings">
         <h1>A h1 header</h1>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
@@ -145,9 +121,9 @@
 
         <h6><a href="#" title="#">A linked h6 header</a></h6>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    </section>
+    </article>
 
-    <section id="text">
+    <article id="text">
         <h2>Full sentence</h2>
         <p><strong>Pellentesque habitant morbi tristique</strong> senectus  et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
@@ -198,9 +174,9 @@
             </code>
         </pre>
 
-    </section>
+    </article>
 
-    <section id="lists">
+    <article id="lists">
 
         <h2>Ordered List</h2>                       
         <ol>
@@ -246,9 +222,9 @@
             <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
         </ul>
 
-    </section>
+    </article>
 
-    <section id="embedded-content">
+    <article id="media">
         <h2>Embedded content</h2> 
 
         <h3>audio</h3> 
@@ -279,50 +255,9 @@
 
         <video controls></video> 
         <video></video>
-    </section>
+    </article>
 
-    <section id="tables-and-forms">
-
-        <table> 
-            <caption>Jimi Hendrix - albums</caption> 
-            <thead> 
-                <tr> 
-                    <th>Album</th> 
-                    <th>Year</th> 
-                    <th>Price</th> 
-                </tr> 
-            </thead> 
-            <tfoot> 
-                <tr> 
-                    <th>Album</th> 
-                    <th>Year</th> 
-                    <th>Price</th> 
-                </tr> 
-            </tfoot> 
-            <tbody> 
-                <tr> 
-                    <td>Are You Experienced</td> 
-                    <td>1967</td> 
-                    <td>$10.00</td> 
-                </tr> 
-                <tr> 
-                    <td>Axis: Bold as Love</td> 
-                    <td>1967</td> 
-                    <td>$12.00</td> 
-                </tr> 
-                <tr> 
-                    <td>Electric Ladyland</td> 
-                    <td>1968</td> 
-                    <td>$10.00</td> 
-                </tr> 
-                <tr> 
-                    <td>Band of Gypsys</td> 
-                    <td>1970</td> 
-                    <td>$12.00</td> 
-                </tr> 
-            </tbody> 
-        </table>
-
+    <article id="forms">
 
         <h3>Form</h3>
         <!--Minimal semantic form markup, based on the work of Sam Croft http://samcroft.co.uk/2011/minimal-form-markup-simple-slender-and-semantic/-->
@@ -429,11 +364,51 @@
                 <div><button type="submit">Submit (button)</button></div> 
             </fieldset> 
         </form>
-    </section>
+    </article>
 
-    <footer role="contentinfo">
-        <p>This page is a <a href="http://tryghost.org">Ghost</a> custom template for checking CSS consistency.</p>
-    </footer>
+    <article id="tables">
+
+        <table> 
+            <caption>Jimi Hendrix - albums</caption> 
+            <thead> 
+                <tr> 
+                    <th>Album</th> 
+                    <th>Year</th> 
+                    <th>Price</th> 
+                </tr> 
+            </thead> 
+            <tfoot> 
+                <tr> 
+                    <th>Album</th> 
+                    <th>Year</th> 
+                    <th>Price</th> 
+                </tr> 
+            </tfoot> 
+            <tbody> 
+                <tr> 
+                    <td>Are You Experienced</td> 
+                    <td>1967</td> 
+                    <td>$10.00</td> 
+                </tr> 
+                <tr> 
+                    <td>Axis: Bold as Love</td> 
+                    <td>1967</td> 
+                    <td>$12.00</td> 
+                </tr> 
+                <tr> 
+                    <td>Electric Ladyland</td> 
+                    <td>1968</td> 
+                    <td>$10.00</td> 
+                </tr> 
+                <tr> 
+                    <td>Band of Gypsys</td> 
+                    <td>1970</td> 
+                    <td>$12.00</td> 
+                </tr> 
+            </tbody> 
+        </table>
+    
+    </article>
 
 </main>
 
