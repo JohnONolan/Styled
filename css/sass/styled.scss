@@ -3,18 +3,14 @@
  * and hack them as a starting point for your own styles, if you like.
  */
 
-@import "compass/css3/border-radius";
-$default-border-radius: 3px;
-
-@import "compass/css3/box-shadow";
-$default-box-shadow-color: rgba(0,0,0,0.05);
-$default-box-shadow-v-offset: 1px;
-
-@import "compass/css3/transition";
-$default-transition-duration: 0.3s;
+@import 'bourbon/bourbon';
 
 @import "normalize.css";
 @import "demopage.css";
+
+@mixin baseline {
+    margin: 1.6em 0;
+}
 
 /* =============================================================================
    Main Styles
@@ -46,8 +42,8 @@ form {
             display:inline-block;
             width:120px;
             margin-right:15px;
-            font-weight:bold;
-            color:#ccc;
+            font-weight:normal;
+            color:#aaa;
             text-align: right;
         }
     }
@@ -70,9 +66,8 @@ form {
         line-height: 1.4em;
         background: #fff;
         border: #eee 1px solid;
-        @include border-radius;
-        @include box-shadow(rgba(0,0,0,0.05) 0 1px 3px inset);
-        @include transition;
+        border-radius: 3px;
+        box-shadow: rgba(0,0,0,0.05) 0 1px 3px inset;
     }
 
     textarea {
@@ -134,13 +129,50 @@ form {
 
 }//form
 
-/* =============================================================================
-   Hacks
-   ============================================================================= */
 
-// Semi-fixes moronic bullshit bug that Firefox refuse to fix themselves 
-// https://bugzilla.mozilla.org/show_bug.cgi?id=697451
-// It's such a fucking mystery why FF's market share is going to shit.
-input[type="submit"] {
-    height:29px;
+// Tabular Data
+
+table {
+    @include baseline;
+    @include box-sizing(border-box);
+    width:100%;
+    max-width: 100%;
+    background-color: transparent;
+
+    th,
+    td {
+      padding: 8px;
+      line-height: 20px;
+      text-align: left;
+      vertical-align: top;
+      border-top: 1px solid #efefef;
+    }
+
+    th { color: #bbb; }
+
+    caption + thead tr:first-child th,
+    caption + thead tr:first-child td,
+    colgroup + thead tr:first-child th,
+    colgroup + thead tr:first-child td,
+    thead:first-child tr:first-child th,
+    thead:first-child tr:first-child td {
+      border-top: 0;
+    }
+
+    tbody + tbody { border-top: 2px solid #efefef; }
+
+    table table { background-color: #fff; }
+
+    tbody > tr:nth-child(odd) > td,
+    tbody > tr:nth-child(odd) > th {
+        background-color: #efefef;
+    }
+
+    &.plain {
+        tbody > tr:nth-child(odd) > td,
+        tbody > tr:nth-child(odd) > th {
+            background: transparent;
+        }
+    }
+
 }

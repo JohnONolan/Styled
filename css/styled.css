@@ -26,8 +26,8 @@ form label {
     display: inline-block;
     width: 120px;
     margin-right: 15px;
-    font-weight: bold;
-    color: #ccc;
+    font-weight: normal;
+    color: #aaa;
     text-align: right; }
 form p {
   font-size: 1em;
@@ -43,18 +43,8 @@ form input, form textarea, form select {
   line-height: 1.4em;
   background: #fff;
   border: #eee 1px solid;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.05) 0 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 1px 3px inset;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  box-shadow: rgba(0, 0, 0, 0.05) 0 1px 3px inset; }
 form textarea {
   width: 100%;
   max-width: 340px;
@@ -81,10 +71,9 @@ form textarea:focus {
   background: #fff;
   outline: none;
   outline-width: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0; }
 form select {
   width: 270px;
   height: 30px;
@@ -104,8 +93,37 @@ form .radio, form .checkbox {
   line-height: 1.7em;
   padding: 0; }
 
-/* =============================================================================
-   Hacks
-   ============================================================================= */
-input[type="submit"] {
-  height: 29px; }
+table {
+  margin: 1.6em 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent; }
+  table th,
+  table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #efefef; }
+  table th {
+    color: #bbb; }
+  table caption + thead tr:first-child th,
+  table caption + thead tr:first-child td,
+  table colgroup + thead tr:first-child th,
+  table colgroup + thead tr:first-child td,
+  table thead:first-child tr:first-child th,
+  table thead:first-child tr:first-child td {
+    border-top: 0; }
+  table tbody + tbody {
+    border-top: 2px solid #efefef; }
+  table table table {
+    background-color: #fff; }
+  table tbody > tr:nth-child(odd) > td,
+  table tbody > tr:nth-child(odd) > th {
+    background-color: #efefef; }
+  table.plain tbody > tr:nth-child(odd) > td,
+  table.plain tbody > tr:nth-child(odd) > th {
+    background: transparent; }
