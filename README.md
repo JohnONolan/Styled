@@ -2,7 +2,13 @@
 
 Styled is a comprehensive HTML framework which acts as a visual styleguide for your CSS. Download the source, link your styles, and check how your CSS affects a wide range of default markup. Because it's better to get your default styles solid first, or you end up writing overrides to override your overrides.
 
+You can view a live version of Styled here:
+
+* [JohnONolan.GitHub.io/Styled](http://JohnONolan.GitHub.io/Styled)
+
 Created and maintained by [John O'Nolan](http://twitter.com/JohnONolan).
+
+* * *
 
 ##How to Use Styled
 
@@ -21,6 +27,8 @@ There are two ways to use Styled in your projects:
 2. Open **styled.html**, grab all code between the `<!--Start-->` & `<!--Stop-->` comments.
 3. Copy and paste the markup into the content area of your project's standard page template.
 4. Open the page with your favourite browser.
+
+* * *
 
 ##Author
 
