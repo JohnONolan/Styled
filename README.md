@@ -4,7 +4,7 @@ Styled is a comprehensive HTML framework which acts as a visual styleguide for y
 
 You can view a live version of Styled here:
 
-* [JohnONolan.GitHub.io/Styled](http://JohnONolan.GitHub.io/Styled)
+* [johnonolan.github.io/styled](http://JohnONolan.GitHub.io/Styled)
 
 Created and maintained by [John O'Nolan](http://twitter.com/JohnONolan).
 
