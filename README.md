@@ -1,35 +1,43 @@
-#Styled
+# Styled
 
 Styled is a comprehensive HTML framework which acts as a visual styleguide for your CSS. Download the source, link your styles, and check how your CSS affects a wide range of default markup. Because it's better to get your default styles solid first, or you end up writing overrides to override your overrides.
 
+You can view a live version of Styled here:
+
+* [johnonolan.github.io/styled](http://JohnONolan.GitHub.io/Styled)
+
 Created and maintained by [John O'Nolan](http://twitter.com/JohnONolan).
 
-##How to Use Styled
+* * *
+
+## How to Use Styled
 
 There are two ways to use Styled in your projects:
 
-###Standalone
+### Standalone
 
 1. [Download](https://github.com/JohnONolan/Styled/zipball/master) the latest release.
 2. Drop the `/styled/` folder into your project archive.
 3. Edit **styled.html** to include your project's CSS file.
 4. Open the html file with your favourite browser.
 
-###Integrated
+### Integrated
 
 1. [Download](https://github.com/JohnONolan/Styled/zipball/master) the latest release.
 2. Open **styled.html**, grab all code between the `<!--Start-->` & `<!--Stop-->` comments.
 3. Copy and paste the markup into the content area of your project's standard page template.
 4. Open the page with your favourite browser.
 
-##Author
+* * *
+
+## Author
 
 **John O'Nolan**
 
 * [http://john.onolan.org](http://john.onolan.org)
 * [http://twitter.com/JohnONolan](http://twitter.com/JohnONolan)
 
-##Copyright & License
+## Copyright & License
 
 Copyright (c) 2013 John O'Nolan
 
